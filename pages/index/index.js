@@ -17,5 +17,10 @@ Page({
     wx.navigateTo({
       url: '../richEditor/richEditor',
     })
+  },
+  goRichTextDemo(){
+    wx.navigateTo({
+      url: '../richtext_demo/richtext_demo',
+    })
   }
 })

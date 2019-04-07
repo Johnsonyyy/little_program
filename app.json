@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/richEditor/richEditor"
+    "pages/richEditor/richEditor",
+    "pages/richtext_demo/richtext_demo"
   ],
   "window":{
     "backgroundTextStyle":"light",

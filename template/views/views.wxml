@@ -9,10 +9,10 @@
 <template name="viewWithLeftAndRightImg"> 
   <view class='flex_layout layout flex_space_bet' bindtap='{{event?event:"_bindViewTap"}}'>
     <view class='big_font_size flex_layout flex_row'>
-      <image src='{{leftImg}}' wx:if="{{leftImg}}" style='margin-right:8px;' />
+      <i class="iconfont aydk-icon-text text-normal mr-3"></i>
       {{title}}
     </view>
     <view wx:if="{{conten}}">{{content}}</view>
-    <image src='{{rightImg}}' />
+    <i class="iconfont aydk-icon-right text-normal text-gray mr-3"></i>
   </view>
 </template>

@@ -22,5 +22,10 @@ Page({
     wx.navigateTo({
       url: '../richtext_demo/richtext_demo',
     })
+  },
+  goAddImg() {
+    wx.navigateTo({
+      url: '../add-img/add-img',
+    })
   }
 })

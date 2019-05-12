@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "row-view": "../../components/aydk_row_view/aydk_row_view",
+    "img-view": "../../components/aydk_image_view/aydk_image_view"
+  }
+}

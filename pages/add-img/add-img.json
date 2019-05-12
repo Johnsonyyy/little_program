@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "add-img-view": "../../components/aydk_add_img/aydk_add_img"
+  }
+}

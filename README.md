@@ -10,3 +10,8 @@
   {info: "http://tmp/wxba5fb31d99522eae.o6zAJszJJdcMyzE_R4tD….vBmoK4Z7iZPS6f0307aeba35dccf63609d6a795725d8.jpg", type: 1}
   {info: "1123213", type: 0}
 ]
+
+#### 05-11更新
+1.新增row-view组件
+2.新增image-view组件
+3.新增添加图片组件

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "date":"../../components/aydk_date_ymdhm/aydk_date_ymdhm"
+  }
+}

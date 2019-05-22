@@ -27,5 +27,10 @@ Page({
     wx.navigateTo({
       url: '../add-img/add-img',
     })
+  },
+  goDate() {
+    wx.navigateTo({
+      url: '../date/date',
+    })
   }
 })

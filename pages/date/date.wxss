@@ -1,0 +1,12 @@
+/* pages/date/date.wxss */
+.demo{
+  display: flex;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  background: white;
+  align-items: center;
+  font-size: 18px;
+  position: absolute;
+  top: 40%;
+}

@@ -3,3 +3,5 @@
 <template is="viewWithLeftAndRightImg" data='{{leftImg:"../image/richtext_1.png",title:"富文本编辑器(已弃用)",rightImg:"../image/right.png"}}' />
 <template is="viewWithLeftAndRightImg" data='{{leftImg:"../image/richtext_1.png",title:"富文本编辑器（组件）",rightImg:"../image/right.png",event:"goRichTextDemo"}}' />
 <template is="viewWithLeftAndRightImg" data='{{leftImg:"../image/richtext_1.png",title:"图片上传组件（预览和删除）",rightImg:"../image/right.png",event:"goAddImg"}}' />
+<template is="viewWithLeftAndRightImg" data='{{leftImg:"../image/richtext_1.png",title:"时间日期选择器",rightImg:"../image/right.png",event:"goDate"}}' />
+

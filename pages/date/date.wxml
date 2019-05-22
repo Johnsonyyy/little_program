@@ -1,0 +1,7 @@
+<view class='demo' bindtap='getDate'>
+  {{date}}
+</view>
+<date 
+  showDatePick='{{showDatePick}}'
+  bind:getDate="getDateData"
+  ></date>

@@ -11,7 +11,7 @@ Component({
     },
     initlist:{ // 用于初始化数据，例如，编辑富文本
       type:Array,
-      value:[]
+      value: []
     },
     save: {
       type: String,
@@ -31,7 +31,7 @@ Component({
   data: {
     dataList:[],
     focusList:[{
-      focus:true
+      focus:false
     }],
     isEdit:true,
     addImgView:{},
@@ -69,6 +69,9 @@ Component({
                 img: that.data.initlist[i].info,
                 info: ''
               })
+              that.data.focusList.push({
+                focus: false
+              })
             }
           } else {
             if (that.data.initlist[i].type === 0) { // 文字
@@ -78,12 +81,17 @@ Component({
                 img: that.data.initlist[i].info,
                 info: ''
               })
+              that.data.focusList.push({
+                focus: false
+              })
             }
           }
         }
         that.setData({
           firstCon:that.data.firstCon,
-          dataList:that.data.dataList
+          focusList: that.data.focusList,
+          dataList:that.data.dataList,
+          insertIndex: that.data.dataList.length
         })
       }
     },
@@ -149,7 +157,8 @@ Component({
             })
             that.setData({
               dataList: that.data.dataList,
-              focusList: that.data.focusList
+              focusList: that.data.focusList,
+              insertIndex: that.data.insertIndex+1
             })
           },
         })
@@ -186,7 +195,6 @@ Component({
      * 返回 富文本数据list
      */
     _saveRichText(){
-      console.log("保存");
       let that = this;
       let list = [];
       if(that.data.firstCon){

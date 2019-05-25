@@ -1,8 +1,8 @@
-#### little_program
+#### little_program （觉得有用的话，欢迎加星哈,也可以加我微信（xc1255178487），拉你进群交流哦）
 小程序组件demo
 ##### 富文本组件
 文档：https://blog.csdn.net/u012436704/article/details/89071775
-富文本数据传入的数据格式样例：
+<br />富文本数据传入的数据格式样例：
 ```
 [ // type ：0 文本 1 图片
   {info: "13123", type: 0}, 

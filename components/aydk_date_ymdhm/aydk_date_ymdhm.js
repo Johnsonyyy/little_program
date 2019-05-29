@@ -13,6 +13,11 @@ Component({
       type:String,
       value: new Date().getTime()
     },
+    key:{ // 默认需要标识这个组件的值，可以是字符串，数字，对象，数组
+      type: String,
+      optionalTypes: [Number,Object,Array],
+      value: ''
+    },
     showDatePick:{
       type: Boolean,
       value: false,
@@ -156,7 +161,8 @@ Component({
       that.setData({
         showDatePick: false
       })
-      that.triggerEvent('getDate', [that.data.yearList[that.data.currentDate[0]], that.data.monthList[that.data.currentDate[1]],that.data.dateList[that.data.currentDate[2]],that.data.hourList[that.data.currentDate[3]],that.data.minusList[that.data.currentDate[4]]]);
+      let date = [that.data.yearList[that.data.currentDate[0]], that.data.monthList[that.data.currentDate[1]], that.data.dateList[that.data.currentDate[2]], that.data.hourList[that.data.currentDate[3]], that.data.minusList[that.data.currentDate[4]]];
+      that.triggerEvent('getDate', [date,that.data.key]);
     }
   }
 })

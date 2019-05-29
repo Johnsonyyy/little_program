@@ -1,7 +1,23 @@
 <view class='demo' bindtap='getDate'>
-  {{date}}
+  {{date||'选择时间'}}
 </view>
 <date 
   showDatePick='{{showDatePick}}'
   bind:getDate="getDateData"
   ></date>
+
+<!-- 带参数 -->
+<!-- <view class='demo' bindtap='getDate' data-index='1'>
+  {{dateArr[0]}}
+</view>
+<view class='demo2' bindtap='getDate' data-index='1'>
+  {{dateArr[1]||'选择时间'}}
+</view>
+<view class='demo3' bindtap='getDate' data-index='2'>
+  {{dateArr[2]||'选择时间'}}
+</view>
+<date 
+  showDatePick='{{showDatePick}}'
+  key="{{currentIndex}}"
+  bind:getDate="getDateData"
+  ></date> -->

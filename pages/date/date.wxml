@@ -7,7 +7,7 @@
   ></date>
 
 <!-- 带参数 -->
-<!-- <view class='demo' bindtap='getDate' data-index='1'>
+<!-- <view class='demo' bindtap='getDate' data-index='0'>
   {{dateArr[0]}}
 </view>
 <view class='demo2' bindtap='getDate' data-index='1'>

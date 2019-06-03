@@ -1,0 +1,53 @@
+<row-item
+  label="左右侧不带图标">
+</row-item>
+<row-item
+  label="左侧不带图标">
+  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
+</row-item>
+<row-item
+  label="左侧不带图标2"
+  rightIcon="../../pages/image/right.png">
+</row-item>
+<row-item
+  label="右侧不带图标">
+  <i slot="leftIcon" class="iconfont aydk-icon-add-img"></i>
+</row-item>
+<row-item
+  label="带有提示（红点）"
+  redPoint>
+  <i slot="leftIcon" class="iconfont aydk-icon-add-img"></i>
+  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
+</row-item>
+<row-item
+  label="带有提示（文字）"
+  signText="新消息">
+  <i slot="leftIcon" class="iconfont aydk-icon-add-img"></i>
+  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
+</row-item>
+<row-item
+  label="带有提示（文字和背景）"
+  signText="新消息"
+  redPoint>
+  <i slot="leftIcon" class="iconfont aydk-icon-add-img"></i>
+  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
+</row-item>
+<row-item
+  label="带有提示（文字和背景）"
+  signText="新消息"
+  redPoint>
+  <i slot="leftIcon" class="iconfont aydk-icon-add-img"></i>
+  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
+</row-item>
+<row-item
+  label="打开客服页面"
+  target="_contact">
+  <i slot="leftIcon" class="iconfont aydk-icon-add-img"></i>
+  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
+</row-item>
+<row-item
+  label="跳转页面"
+  target="../date/date">
+  <i slot="leftIcon" class="iconfont aydk-icon-add-img"></i>
+  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
+</row-item>

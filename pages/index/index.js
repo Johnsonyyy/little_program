@@ -13,24 +13,4 @@ Page({
   onLoad: function (options) {
 
   },
-  _bindViewTap:function(){
-    wx.navigateTo({
-      url: '../richEditor/richEditor',
-    })
-  },
-  goRichTextDemo(){
-    wx.navigateTo({
-      url: '../richtext_demo/richtext_demo',
-    })
-  },
-  goAddImg() {
-    wx.navigateTo({
-      url: '../add-img/add-img',
-    })
-  },
-  goDate() {
-    wx.navigateTo({
-      url: '../date/date',
-    })
-  }
 })

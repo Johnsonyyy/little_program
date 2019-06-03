@@ -4,7 +4,8 @@
     "pages/add-img/add-img",
     "pages/date/date",
     "pages/richEditor/richEditor",
-    "pages/richtext_demo/richtext_demo"
+    "pages/richtext_demo/richtext_demo",
+    "pages/line/line"
   ],
   "window":{
     "backgroundTextStyle":"light",

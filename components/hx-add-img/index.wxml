@@ -1,0 +1,17 @@
+<x-view>
+  <block wx:for="{{imageList}}" wx:key="{{index}}">
+    <x-image
+      src="{{item}}"
+      imageList="{{imageList}}"
+      bind:deleteImg="deleteImg"
+      size='{{num}}'>
+    </x-image>
+  </block>
+  <x-image
+    wx:if="{{imageList.length<num}}"
+    add="true"
+    add_limit="{{num-imageList.length}}"
+    bind:addImg="addImg"
+    size='{{num}}'>
+  </x-image>
+</x-view>

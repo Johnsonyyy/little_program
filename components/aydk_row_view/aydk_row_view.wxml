@@ -1,3 +1,0 @@
-<view class='content' style='background-color:{{bg}};'>
-  <slot></slot>
-</view>

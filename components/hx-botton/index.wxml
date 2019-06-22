@@ -1,0 +1,8 @@
+<form wx:if="{{btnType=='primary'}}" report-submit='true' bindsubmit='_submitEvent' bindreset="formReset">
+  <view><slot></slot></view>
+  <button disabled='{{disable}}' class='button_view' formType="submit">{{label}}</button>
+</form>
+<view wx:elif="{{btnType=='circle'}}" class='circle_btn circle' bindtap='_clickCircle'>
+  <slot name="circleIcon"></slot>
+  <view wx:if="{{num > 0}}" class='red_pointer_num'>{{num}}</view>
+</view>

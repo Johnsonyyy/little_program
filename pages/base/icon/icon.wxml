@@ -1,0 +1,9 @@
+<x-view>
+  
+</x-view>
+<x-row
+  label="x-icon(图标)"
+  target="/pages/base/icon/icon">
+  <x-icon slot="leftIcon" type='note'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>

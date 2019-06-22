@@ -1,0 +1,12 @@
+<x-row
+  label="x-richtext(富文本)"
+  target="/pages/container-view/scroller/scroller">
+  <x-icon slot="leftIcon" type='score'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-date(五级联动)"
+  target="/pages/container-view/swiper/swiper">
+  <x-icon slot="leftIcon" type='date'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>

@@ -1,0 +1,36 @@
+<x-row
+  label="x-scroller(刷新和加载更多的视图和钩子)"
+  target="/pages/container-view/scroller/scroller">
+  <x-icon slot="leftIcon" type='menu'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-swiper(带背景联动)"
+  target="/pages/container-view/swiper/swiper">
+  <x-icon slot="leftIcon" type='menu'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-list(有序和无序列表)"
+  target="/pages/container-view/list/list">
+  <x-icon slot="leftIcon" type='menu'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-item(封装点击和长按事件)"
+  target="/pages/container-view/item/item">
+  <x-icon slot="leftIcon" type='menu'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-row(水平菜单)"
+  target="/pages/container-view/row/row">
+  <x-icon slot="leftIcon" type='menu'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-view(基础组件)"
+  target="/pages/container-view/base/base">
+  <x-icon slot="leftIcon" type='menu'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>

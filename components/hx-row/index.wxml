@@ -1,0 +1,13 @@
+<view class='item-view' bindtap='_clickItem'>
+  <view class='left-view'>
+    <image wx:if="{{leftIcon}}" src='{{leftIcon}}'></image>
+    <slot name="leftIcon"></slot>
+    <view class="label">{{label}}</view>
+  </view>
+  <view wx:if="{{(redPoint||signText)&&showSign}}" class='{{redPoint?(signText?"red-sign":"red-point"):""}}'>{{signText}}</view>
+  <view>
+    <slot name="rightIcon"></slot>
+    <image class='right-img' src='{{rightIcon}}' wx:if="{{rightIcon}}"></image>
+  </view>
+  <button wx:if="{{target === '_contact'}}" class='contact' open-type='contact'></button>
+</view>

@@ -1,0 +1,48 @@
+<x-scroller>
+  <x-row
+    label="左右侧不带图标">
+  </x-row>
+  <x-row
+    label="左侧不带图标">
+    <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+  </x-row>
+  <x-row
+    label="左侧不带图标（图片）"
+    rightIcon="/pages/image/right.png">
+  </x-row>
+  <x-row
+    label="右侧不带图标">
+    <x-icon slot="leftIcon" type='tips'></x-icon>
+  </x-row>
+  <x-row
+    label="带有提示（红点）"
+    redPoint>
+    <x-icon slot="leftIcon" type='pie-charts'></x-icon>
+    <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+  </x-row>
+  <x-row
+    label="带有提示（文字）"
+    signText="新消息">
+    <x-icon slot="leftIcon" type='line-charts'></x-icon>
+    <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+  </x-row>
+  <x-row
+    label="带有提示（文字和背景）"
+    signText="新消息"
+    redPoint>
+    <x-icon slot="leftIcon" type='column-charts'></x-icon>
+    <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+  </x-row>
+  <x-row
+    label="打开客服页面"
+    target="_contact">
+    <x-icon slot="leftIcon" type='chat'></x-icon>
+    <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+  </x-row>
+  <x-row
+    label="跳转页面"
+    target="../date/date">
+    <x-icon slot="leftIcon" type='menu'></x-icon>
+    <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+  </x-row>
+</x-scroller>

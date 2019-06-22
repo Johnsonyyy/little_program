@@ -1,32 +1,28 @@
 <!--pages/index/index.wxml-->
-<row-item
-  label="富文本编辑器(已弃用)"
-  target="../richEditor/richEditor">
-  <i slot="leftIcon" class="iconfont aydk-icon-score"></i>
-  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
-</row-item>
-<row-item
-  label="富文本编辑器（组件)"
-  target="../richtext_demo/richtext_demo">
-  <i slot="leftIcon" class="iconfont aydk-icon-score"></i>
-  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
-</row-item>
-<row-item
-  label="图片上传组件（预览和删除）"
-  target="../add-img/add-img">
-  <i slot="leftIcon" class="iconfont aydk-icon-add-img"></i>
-  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
-</row-item>
-<row-item
-  label="时间日期选择器(五级联动)"
-  leftIcon="../../pages/image/richtext_1.png"
-  target="../date/date">
-  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
-</row-item>
-<row-item
-  label="水平布局demo"
-  target="../line/line">
-  <i slot="leftIcon" class="iconfont aydk-icon-text"></i>
-  <i slot="rightIcon" class="iconfont aydk-icon-right"></i>
-</row-item>
+<x-swiper withBg='true' images="{{images}}">
+</x-swiper>
+<x-row
+  label="视图容器组件"
+  target="/pages/container-view/index/index">
+  <x-icon slot="leftIcon" type='menu'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="基础组件(icon和富文本)"
+  target="/pages/base/index/index">
+  <x-icon slot="leftIcon" type='note'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="表单组件（双向绑定）"
+  target="/pages/form/index/index">
+  <x-icon slot="leftIcon" type='order-line'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="业务组件"
+  target="/pages/work/index/index">
+  <x-icon slot="leftIcon" type='tips'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
 

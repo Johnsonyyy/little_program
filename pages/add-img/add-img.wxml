@@ -1,3 +1,3 @@
-<add-img-view
+<x-add-img
   bind:getImageList="getImageList">
-</add-img-view>
+</x-add-img>

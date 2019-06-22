@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "form",
+  "usingComponents": {
+    "x-icon": "/components/hx-icon/index",
+    "x-row": "/components/hx-row/index"
+  }
+}

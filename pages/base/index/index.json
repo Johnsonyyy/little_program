@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "基础组件",
+  "usingComponents": {
+    "x-icon": "/components/hx-icon/index",
+    "x-row": "/components/hx-row/index"
+  }
+}

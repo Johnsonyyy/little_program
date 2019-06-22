@@ -1,0 +1,12 @@
+<x-scroller>
+  <block wx:for="{{dataList}}">
+    <x-item wx:key="{{index}}" bind:click="clickItem" bind:longClick="longClickItem" bindData="{{index}}" direction='{{item.display}}'>
+      <x-view>
+        {{item.title}}{{index}}
+      </x-view>
+      <x-view>
+        {{item.display}}布局
+      </x-view>
+    </x-item>
+  </block>
+</x-scroller>

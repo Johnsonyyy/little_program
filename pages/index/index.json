@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "row-item": "../../components/hor-line-view/hor-line-view"
+    "x-swiper": "../../components/hx-swiper/index",
+    "x-icon": "../../components/hx-icon/index",
+    "x-row": "../../components/hx-row/index"
   }
 }

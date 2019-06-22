@@ -1,0 +1,11 @@
+<x-view row="left">水平靠左</x-view>
+<x-view bg='white' row="right">水平靠右</x-view>
+<x-view bg='white' row="center">水平居中</x-view>
+<x-view bg='white' row="between">
+  <view>space</view>
+  <view>between</view>
+</x-view>
+<x-view bg='white' col="top">垂直上方</x-view>
+<x-view bg='white' col="middle">垂直居中</x-view>
+<x-view bg='white' height="200px" col="bottom">垂直下方</x-view>
+

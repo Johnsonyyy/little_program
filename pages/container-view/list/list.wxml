@@ -1,0 +1,4 @@
+<x-list title="无序列表" order="{{false}}" content="{{content}}">
+</x-list>
+<x-list title="有序列表" content="{{content}}">
+</x-list>

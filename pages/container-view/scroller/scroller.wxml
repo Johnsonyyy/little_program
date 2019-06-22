@@ -1,0 +1,4 @@
+<x-scroller height="200">
+  <x-view>1.默认高度为100%</x-view>
+  <x-view>2.有加载更多和刷新的钩子</x-view>
+</x-scroller>

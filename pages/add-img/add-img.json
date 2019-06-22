@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "add-img-view": "../../components/aydk_add_img/aydk_add_img"
+    "x-add-img": "../../components/hx-add-img/index"
   }
 }

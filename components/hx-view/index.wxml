@@ -1,0 +1,3 @@
+<view class='item item-{{row}} col-{{col}} bg-{{bg}} text-{{color}}' bindtap='_bindTap' style='height:{{height}};width:{{width}};background:{{bgStyle}};color:{{colorStyle}};font-size:{{size}}px;'>
+  <slot></slot>
+</view>

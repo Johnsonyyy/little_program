@@ -1,10 +1,20 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/container-view/index/index",
+    "pages/container-view/scroller/scroller",
+    "pages/container-view/row/row",
+    "pages/container-view/base/base",
+    "pages/container-view/item/item",
+    "pages/container-view/list/list",
+    "pages/form/index/index",
+    "pages/form/date/date",
     "pages/add-img/add-img",
+    "pages/base/index/index",
+    "pages/base/icon/icon",
+    "pages/base/richtext/richtext",
+    "pages/work/index/index",
     "pages/date/date",
-    "pages/richEditor/richEditor",
-    "pages/richtext_demo/richtext_demo",
     "pages/line/line"
   ],
   "window":{

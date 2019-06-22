@@ -1,0 +1,31 @@
+<view class='body' hidden='{{!showModal}}'>
+  <view class='content'>
+    <view class='top text-title'>
+      {{title||"温馨提示"}}
+    </view>
+    <scroll-view scroll-y="true" class='middle'>
+      <text wx:if="{{info}}" class='info'>{{info}}</text>
+      <view class='info'><slot></slot></view>
+    </scroll-view>
+    <view wx:if="{{share||like}}" class='bottom'>
+      <view class='operator-view mr-4 border-gray'>
+        <i class="iconfont hx-icon-share text-gray"></i>
+        <button data-index='{{index}}' class='share-button' open-type="share"></button>
+      </view>
+      <view bindtap='likeView' data-index='{{index}}' class="operator-view ml-30 border-{{likestatus?color:'gray'}}">
+        <i class="iconfont hx-icon-lover text-{{likestatus?color:'gray'}}"></i>
+      </view>
+    </view>
+    <form wx:elif="{{setting}}" report-submit='true' bindsubmit='openSetting' bindreset="formReset">
+      <view class='bottom'>
+        <button class='bg-label' open-type="openSetting" bindopensetting="callback" formType="submit">打开设置页面</button>
+      </view>
+    </form>
+    <form wx:else report-submit='true' bindsubmit='submitForm' bindreset="formReset">
+      <view class='bottom'>
+        <button class='bg-label' formType="submit">{{label}}</button>
+      </view>
+    </form>
+    <i wx:if="{{close}}" bindtap="closeView" class='close iconfont hx-icon-close text-large text-{{color}}'></i>
+  </view>
+</view>

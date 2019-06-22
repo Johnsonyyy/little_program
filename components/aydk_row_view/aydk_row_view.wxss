@@ -1,7 +1,0 @@
-/* components/aydk_row_view/aydk_row_view.wxss */
-.content{
-  display: flex !important;
-  padding: 8px 0px;
-  flex-direction: row !important;
-  flex-wrap: wrap;
-}

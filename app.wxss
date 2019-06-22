@@ -1,6 +1,4 @@
 /**app.wxss**/
-@import "template/views/views.wxss"; 
-@import "pages/css/icon.wxss"; 
 /**
 *参考bootstrap自行编写自己常用的一些公用样式文件
 *其中带有boy和girl是用于男女不同主题的切换使用

@@ -1,0 +1,13 @@
+.pointer{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: black;
+}
+.pointer-view{
+  width: 12px;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

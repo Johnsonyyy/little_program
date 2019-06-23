@@ -176,7 +176,7 @@ Component({
      */
     _deletedImg(e){
       let that = this;
-      let index = +e.currentTarget.dataset.index;
+      let index = +e.detail;
       if(that.data.dataList[index].info){
         if(index === 0){ // 最后一个
           that.data.firstCon = that.data.firstCon + that.data.dataList[index].info;

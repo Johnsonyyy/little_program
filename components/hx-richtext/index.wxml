@@ -4,7 +4,7 @@
   <view wx:for="{{dataList}}" wx:key="{{index}}">
     <view class='img_view' style='height:{{width/2}}px;'>
       <image src='{{item.img}}' mode='aspectFill' />
-      <i bindtap='_deletedImg' data-index='{{index}}' class='iconfont aydk-icon-close text-error text-large close_img'></i>
+      <x-icon position='close_img' slot="leftIcon" color='danger' bind:click="_deletedImg" bindData="{{index}}" type='clear'></x-icon>
     </view>
     <textarea wx:if="{{isEdit}}" class='input_view' maxlength='-1' auto-height='true' bindinput='_inputCon' value='{{item.info}}' placeholder='写点什么...' focus='{{focusList[index+1].focus}}' bindblur="_outBlur" style='width:{{width-20}}px;' data-index='{{index+1}}' />
     <view wx:if="{{!isEdit}}" bindtap='_focusView' class='input_view2 text-gray' data-index='{{index+1}}'>{{item.info||'写点什么...'}}</view>

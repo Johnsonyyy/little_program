@@ -1,4 +1,4 @@
-<x-view>
+<x-view bg="white">
   <block wx:for="{{imageList}}" wx:key="{{index}}">
     <x-image
       src="{{item}}"

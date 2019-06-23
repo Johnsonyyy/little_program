@@ -1,12 +1,14 @@
 .input_view{
   padding: 10px;
   width: 100%;
+  line-height: 32rpx;
   font-size: 32rpx;
 }
 .input_view2{
   padding: 10px;
   width: 100%;
   font-size: 32rpx;
+  line-height: 19px;
   white-space: pre-wrap;
   word-break: break-all;
 }

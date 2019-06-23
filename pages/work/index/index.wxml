@@ -1,2 +1,6 @@
-<!--pages/work/index/index.wxml-->
-<text>pages/work/index/index.wxml</text>
+<x-row
+  label="x-add-img(添加图片)"
+  target="/pages/work/add-img/add-img">
+  <x-icon slot="leftIcon" type='tips'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>

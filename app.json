@@ -9,13 +9,12 @@
     "pages/container-view/list/list",
     "pages/form/index/index",
     "pages/form/date/date",
-    "pages/add-img/add-img",
     "pages/base/index/index",
     "pages/base/icon/icon",
     "pages/base/richtext/richtext",
     "pages/work/index/index",
-    "pages/date/date",
-    "pages/line/line"
+    "pages/work/add-img/add-img",
+    "pages/date/date"
   ],
   "window":{
     "backgroundTextStyle":"light",

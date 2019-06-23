@@ -1,9 +1,14 @@
 // components/hx-icon/index.js
 Component({
+  externalClasses: ['position'],
   /**
    * 组件的属性列表
    */
   properties: {
+    bindData:{ //传递的数据
+      type: String,
+      optionalTypes:[Number,Array,Object]
+    },
     type:{
       type: String,
       value: ''
@@ -29,6 +34,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    clickIcon(){
+      let that = this;
+      that.triggerEvent("click",that.data.bindData);
+    }
   }
 })

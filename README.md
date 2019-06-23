@@ -1,6 +1,20 @@
-#### little_program （觉得有用的话，欢迎加星哈,也可以加我微信（xc1255178487），拉你进群交流哦）
+#### x-组件 （觉得有用的话，欢迎加星哈,也可以加我微信（xc1255178487），拉你进群交流哦）
+![image](https://github.com/xc1255178487/little_program/blob/master/pages/image/auth.jpeg)
 小程序组件demo
+##### 首页效果
+
+![image](https://github.com/xc1255178487/little_program/blob/master/pages/image/index.png)
+
+![image](https://github.com/xc1255178487/little_program/blob/master/pages/image/container.png)
+
+#### 表单组件
+
+![image](https://github.com/xc1255178487/little_program/blob/master/pages/image/form.png)
+
 ##### 富文本组件
+
+![image](https://github.com/xc1255178487/little_program/blob/master/pages/image/richtext.png)
+
 文档：https://blog.csdn.net/u012436704/article/details/89071775
 <br />富文本数据传入的数据格式样例：
 ```

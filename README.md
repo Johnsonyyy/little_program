@@ -1,4 +1,10 @@
 #### x-组件 （觉得有用的话，欢迎加星哈,也可以加我微信（xc1255178487），拉你进群交流哦）
+![image](https://github.com/xc1255178487/little_program/blob/master/pages/image/WechatIMG7.jpeg)
+
+
+如果群满了的话，可以加我微信拉你入群哦
+
+
 ![image](https://github.com/xc1255178487/little_program/blob/master/pages/image/auth.jpeg)
 小程序组件demo
 ##### 首页效果

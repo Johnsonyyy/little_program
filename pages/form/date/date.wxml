@@ -1,2 +1,1 @@
-<!--pages/form/date/date.wxml-->
-<text>pages/form/date/date.wxml</text>
+<x-date date="{{date}}"></x-date>

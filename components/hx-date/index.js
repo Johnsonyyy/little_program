@@ -152,10 +152,11 @@ Component({
     },
     _confirm(){
       let that = this;
-      that.setData({
-        showDatePick: false
-      })
       let date = [that.data.yearList[that.data.currentDate[0]], that.data.monthList[that.data.currentDate[1]], that.data.dateList[that.data.currentDate[2]], that.data.hourList[that.data.currentDate[3]], that.data.minusList[that.data.currentDate[4]]];
+      that.setData({
+        showDatePick: false,
+        date: date
+      })
       that.triggerEvent('bindValue', [date,that.data.key]);
     },
     /**

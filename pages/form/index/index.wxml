@@ -1,12 +1,30 @@
 <x-row
-  label="x-richtext(富文本)"
+  label="x-input(双向绑定)"
   target="/pages/container-view/scroller/scroller">
-  <x-icon slot="leftIcon" type='score'></x-icon>
+  <x-icon slot="leftIcon" type='order-line'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-checkbox(单选和多选 双向绑定)"
+  target="/pages/container-view/scroller/scroller">
+  <x-icon slot="leftIcon" type='order-line'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-switch(双向绑定)"
+  target="/pages/container-view/scroller/scroller">
+  <x-icon slot="leftIcon" type='order-line'></x-icon>
+  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
+</x-row>
+<x-row
+  label="x-botton(双向绑定)"
+  target="/pages/container-view/scroller/scroller">
+  <x-icon slot="leftIcon" type='order-line'></x-icon>
   <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>
 <x-row
   label="x-date(五级联动)"
-  target="/pages/container-view/swiper/swiper">
-  <x-icon slot="leftIcon" type='date'></x-icon>
+  target="/pages/form/date/date">
+  <x-icon slot="leftIcon" type='order-line'></x-icon>
   <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>

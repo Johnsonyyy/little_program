@@ -1,11 +1,11 @@
-// pages/form/date/date.js
+// pages/form/input/input.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date:new Date()
+
   },
 
   /**

@@ -10,10 +10,6 @@ Component({
       type: String,
       value: ''
     },
-    bindValue: {
-      type: String,
-      value: ''
-    },
     maxlength:{
       type: Number,
       value:-1
@@ -51,11 +47,21 @@ Component({
   },
   attached(){
     let that = this;
-    that.data.arr = (that.data.bindValue || '').split('.');
+    // Object.defineProperty(that.data.page.data,that.data.value,{
+    //   get(){
+    //     return "绑定";
+    //   },
+    //   set(value){
+    //     that.data.page.setData({
+    //       "test1":value
+    //     })
+    //   }
+    // })
+    that.data.arr = (that.data.value || '').split('.');
     if (that.data.require) {
       let obj = {};
-      obj['_' + that.data.bindValue] = {
-        prop: '_' + that.data.bindValue,
+      obj['_' + that.data.value] = {
+        prop: '_' + that.data.value,
         name: that.data.label || that.data.require
       };
       that.data.page.data._require = Object.assign(that.data.page.data._require || {}, obj);
@@ -63,9 +69,9 @@ Component({
   },
   detached() {
     let that = this;
-    that.data.arr = (that.data.bindValue || '').split('.');
+    that.data.arr = (that.data.value || '').split('.');
     if (that.data.require) {
-      delete that.data.page.data._require['_' + that.data.bindValue];
+      delete that.data.page.data._require['_' + that.data.value];
     }
   },
   

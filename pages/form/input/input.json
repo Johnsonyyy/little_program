@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "x-view": "/components/hx-view/index",
+    "x-input": "/components/hx-input/index"
+  }
 }

@@ -1,2 +1,6 @@
-<!--pages/form/input/input.wxml-->
-<text>pages/form/input/input.wxml</text>
+<x-view>{{test1}}</x-view>
+<x-input value='test1'></x-input>
+<x-view>{{test2}}</x-view>
+<x-input value='test2' label="测试输入"></x-input>
+<x-view>{{test3}}</x-view>
+<x-input value='test3' label="测试输入" placeholder='测试输入...'></x-input>

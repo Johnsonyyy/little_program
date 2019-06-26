@@ -17,13 +17,16 @@ module.exports = Behavior({
       for (let item in that.data.page.data) {
         if (Object.prototype.toString.call(that.data.page.data[item]) == '[object Object]') {
           for (let child in that.data.page.data[item]) {
-            if (child === that.data.bindValue) {
+            if (child === that.data.value) {
               that.data.page.data[item][child] = data;
             }
           }
-        } else if (item === that.data.bindValue) {
+        } else if (item === that.data.value) {
           console.log(item);
           that.data.page.data[item] = data;
+          that.data.page.setData({
+            [that.data.value]:data
+          })
         }
       }
     }

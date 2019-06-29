@@ -10,6 +10,8 @@
     "pages/form/index/index",
     "pages/form/date/date",
     "pages/form/input/input",
+    "pages/form/switch/switch",
+    "pages/form/checkbox/checkbox",
     "pages/base/index/index",
     "pages/base/icon/icon",
     "pages/base/richtext/richtext",

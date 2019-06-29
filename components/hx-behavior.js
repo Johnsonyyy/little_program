@@ -4,31 +4,35 @@ module.exports = Behavior({
   properties: {
   },
   data: {
+    tempArr: [],
+    value: '',
     page: {}
   },
   attached() {
     let that = this;
     let pages = getCurrentPages();
     that.data.page = pages[pages.length - 1];
+    that.data.tempArr = that.data.modal.split('.');
+    let tempData = '';
+    that.data.tempArr.forEach((item,index) => {
+      if(index == 0) {
+        console.log(that.data.page.data[item]);
+        tempData = that.data.page.data[item];
+      } else {
+        console.log(item, index);
+        tempData = tempData[item];
+      }
+    })
+    that.setData({
+      value: tempData
+    })
   },
   methods: {
     adjectiveBindData(data) {
       let that = this;
-      for (let item in that.data.page.data) {
-        if (Object.prototype.toString.call(that.data.page.data[item]) == '[object Object]') {
-          for (let child in that.data.page.data[item]) {
-            if (child === that.data.value) {
-              that.data.page.data[item][child] = data;
-            }
-          }
-        } else if (item === that.data.value) {
-          console.log(item);
-          that.data.page.data[item] = data;
-          that.data.page.setData({
-            [that.data.value]:data
-          })
-        }
-      }
+      that.data.page.setData({
+        [that.data.modal]: data
+      })
     }
   }
 })

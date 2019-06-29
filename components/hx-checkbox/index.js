@@ -1,25 +1,20 @@
 var hxBehavior = require('../hx-behavior');
+//  group: [
+//   {
+//     label: '', // 显示的checkbox值
+//     value: '', // 选中的实际的值
+//     checked: '' // 是否选中
+//   }
+// ]
 Component({
   behaviors: [hxBehavior],
   /**
    * 组件的属性列表
    */
   properties: {
-    group:{
-      type: Array,
-      value: [],
-    },
-    label:{
+    modal:{
       type: String,
-      value: ''
-    },
-    value:{
-      type: String,
-      value: ''
-    },
-    bindValue: {
-      type: String,
-      value: ''
+      value: '',
     },
     checked: {
       type: Boolean,
@@ -34,12 +29,30 @@ Component({
       value: -1
     }
   },
-
+  attached() {
+    let that = this;
+    that.data.arr = (that.data.modal || '').split('.');
+    if (that.data.require) {
+      let obj = {};
+      obj['_' + that.data.modal] = {
+        prop: '_' + that.data.modal,
+        name: that.data.label || that.data.require
+      };
+      that.data.page.data._require = Object.assign(that.data.page.data._require || {}, obj);
+    }
+    console.log(that.data.value);
+  },
+  detached() {
+    let that = this;
+    that.data.arr = (that.data.modal || '').split('.');
+    if (that.data.require) {
+      delete that.data.page.data._require['_' + that.data.modal];
+    }
+  },
   /**
    * 组件的初始数据
    */
   data: {
-
   },
 
   /**
@@ -50,7 +63,7 @@ Component({
       let that = this;
       let max = false;
       let min = false
-      let arr = that.data.group.map(item => {
+      let arr = that.data.value.map(item => {
         if(e.detail.value.includes(item.value)) {
           if (that.data.maxlength > 0 && e.detail.value.length > that.data.maxlength){
             max = true;
@@ -74,7 +87,7 @@ Component({
           confirmText: "我知道了"
         })
         that.setData({
-          group: arr,
+          value: arr,
         })
       }
       that.adjectiveBindData(arr);

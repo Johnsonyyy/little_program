@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "x-view":"../hx-view/index"
+    "x-icon": "/components/x-icon/index"
   }
 }

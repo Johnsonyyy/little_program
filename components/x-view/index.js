@@ -1,5 +1,6 @@
 // components/hx-row/hx-row.js
 Component({
+  externalClasses: ['display'],
   /**
    * 组件的属性列表
    */
@@ -38,9 +39,29 @@ Component({
       type: String,
       value: ''
     },
-    size:{ // 字体大小，默认是14，单位是像素
-      type: Number,
-      value: 14
+    font:{ // 字体大小，默认是14，单位是像素
+      type: String,
+      value: "14px"
+    },
+    radius:{
+      type:String,
+      value: 'rect'
+    },
+    shadow:{
+      type: Boolean,
+      value: false
+    },
+    target: {
+      type: String,
+      value: ''
+    },
+    margin:{
+      type: String,
+      value: "0px"
+    },
+    padding: {
+      type: String,
+      value: "8px"
     }
   },
   attached() {

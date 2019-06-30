@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "x-date":"../../components/hx-date/index",
-    "x-row": "../../components/hx-row/index"
+    "x-date":"../../components/x-date/index",
+    "x-row": "../../components/x-row/index"
   }
 }

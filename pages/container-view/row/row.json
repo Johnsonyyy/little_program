@@ -1,8 +1,8 @@
 {
   "navigationBarTitleText": "x-row",
   "usingComponents": {
-    "x-scroller": "/components/hx-scroller/index",
-    "x-icon": "/components/hx-icon/index",
-    "x-row": "/components/hx-row/index"
+    "x-scroller": "/components/x-scroller/index",
+    "x-icon": "/components/x-icon/index",
+    "x-row": "/components/x-row/index"
   }
 }

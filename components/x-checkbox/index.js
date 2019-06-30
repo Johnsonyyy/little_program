@@ -1,4 +1,4 @@
-var hxBehavior = require('../hx-behavior');
+var hxBehavior = require('../x-behavior');
 //  group: [
 //   {
 //     label: '', // 显示的checkbox值

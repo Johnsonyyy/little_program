@@ -13,7 +13,24 @@ const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
-
+const isNumber = (obj) => {
+  if(isNaN(obj)) {
+    return false;
+  }
+  if (Object.prototype.toString.call(+obj) === '[object Number]'){
+     if(isNaN(+obj)) {
+       return false;
+     } else {
+       return true;
+     }
+  }else {
+    return false;
+  }
+};
+const isNull = (obj) => {
+  return ['', null].includes(obj);
+}
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  isNumber
 }

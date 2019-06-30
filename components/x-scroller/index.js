@@ -1,4 +1,5 @@
 // components/hx-scroll/hx-scroll.js
+const utils = require('../../utils/util')
 Component({
   options: {
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
@@ -16,7 +17,7 @@ Component({
   attached(){
     // 处理传入的数据
     let that = this;
-    if (Object.prototype.toString.call(that.data.height) == '[object Number]'){
+    if (utils.isNumber(that.data.height)){
       that.setData({
         height: that.data.height+'px'
       })

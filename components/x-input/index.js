@@ -1,5 +1,5 @@
 // components/hx-input/hx-input.js
-var hxBehavior = require('../hx-behavior');
+var hxBehavior = require('../x-behavior');
 Component({
   behaviors: [hxBehavior],
   /**

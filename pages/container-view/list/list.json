@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "x-list",
   "usingComponents": {
-    "x-list":"/components/hx-list/index"
+    "x-list":"/components/x-list/index"
   }
 }

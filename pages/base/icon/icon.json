@@ -2,8 +2,8 @@
   "enablePullDownRefresh": true,
   "navigationBarTitleText": "icon",
   "usingComponents": {
-    "x-icon": "/components/hx-icon/index",
-    "x-view": "/components/hx-view/index",
-    "x-row": "/components/hx-row/index"
+    "x-icon": "/components/x-icon/index",
+    "x-view": "/components/x-view/index",
+    "x-row": "/components/x-row/index"
   }
 }

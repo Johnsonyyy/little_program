@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "x-swiper",
   "usingComponents": {
-    "x-swiper": "/components/hx-swiper/index"
+    "x-swiper": "/components/x-swiper/index"
   }
 }

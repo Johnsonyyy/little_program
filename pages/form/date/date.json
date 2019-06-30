@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "日期",
   "usingComponents": {
-    "x-date":"/components/hx-date/index"
+    "x-date":"/components/x-date/index"
   }
 }

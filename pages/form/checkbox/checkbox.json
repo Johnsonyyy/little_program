@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "x-view": "/components/hx-view/index",
-    "x-checkbox": "/components/hx-checkbox/index"
+    "x-view": "/components/x-view/index",
+    "x-checkbox": "/components/x-checkbox/index"
   }
 }

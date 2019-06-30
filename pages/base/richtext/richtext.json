@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "x-richtext",
   "usingComponents": {
-    "x-richtext": "/components/hx-richtext/index"
+    "x-richtext": "/components/x-richtext/index"
   }
 }

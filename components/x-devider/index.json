@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "loadmore":"/components/hx-loadmore/index"
+    "x-icon": "/components/x-icon/index"
   }
 }

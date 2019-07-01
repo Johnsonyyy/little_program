@@ -62,6 +62,10 @@ Component({
     padding: {
       type: String,
       value: "8px"
+    },
+    direct: {
+      type: String,
+      value: "row"
     }
   },
   attached() {
@@ -82,16 +86,39 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    start: 0,
+    isMove: false,
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    _bindTap(e){
+    _touchStart(e) {
       let that = this;
-      that.triggerEvent('clickEvent');
+      that.data.isMove = false;
+      that.data.start = e.timeStamp;
+    },
+    _bindtouchend(e) {
+      let that = this;
+      if (that.data.isMove) {
+        return;
+      }
+      if (e.timeStamp - that.data.start > 400) {//长按
+        that.triggerEvent('longClick', that.data.bindData);
+      } else { // 点击事件
+        that.triggerEvent('click', that.data.bindData);
+        if (that.data.target) {
+          wx.navigateTo({
+            url: that.data.target,
+          })
+        }
+      }
+      that.data.start = e.timeStamp;
+    },
+    _bindtouchmove(e) {
+      let that = this;
+      that.data.isMove = true;
     }
   }
 })

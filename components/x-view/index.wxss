@@ -2,6 +2,12 @@
   display: flex;
   overflow: hidden;
 }
+.row{
+  flex-direction: row;
+}
+.col{
+  flex-direction: column;
+}
 .item-left{
   justify-content: flex-start;
 }

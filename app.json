@@ -15,6 +15,7 @@
     "pages/base/index/index",
     "pages/base/icon/icon",
     "pages/base/richtext/richtext",
+    "pages/base/progress/index",
     "pages/work/index/index",
     "pages/work/add-img/add-img",
     "pages/date/date"

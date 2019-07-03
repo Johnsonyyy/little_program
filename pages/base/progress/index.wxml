@@ -1,0 +1,6 @@
+<!--pages/base/progress/index.wxml-->
+<x-progress stroke="10" percent="{{precent}}" total="{{total}}" label="恋爱小白"></x-progress>
+
+<x-view width="200px">
+  <x-progress stroke="10" percent="{{precent}}" total="{{total}}" label="恋爱小白"></x-progress>
+</x-view>

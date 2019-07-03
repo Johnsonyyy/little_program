@@ -12,7 +12,7 @@ Component({
     },
     width: {
       type: String,
-      value: '100%',
+      value: '',
       optionalTypes: [Number]
     },
     row:{

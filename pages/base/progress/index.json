@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-progress":"/components/x-progress/index",
+    "x-view": "/components/x-view/index"
+  }
+}

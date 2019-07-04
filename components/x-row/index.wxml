@@ -1,4 +1,4 @@
-<view class='item-view' bindtap='_clickItem'>
+<x-view direct="row" row="between" col="middle" bgStyle="white" margin="{{margin}}" height="{{height}}" width="{{width}}" bind:click='_click' bind:longClick='_longClick' radius="{{radius}}" shadow="{{shadow}}">
   <view class='left-view'>
     <image wx:if="{{leftIcon}}" src='{{leftIcon}}'></image>
     <slot name="leftIcon"></slot>
@@ -10,4 +10,4 @@
     <image class='right-img' src='{{rightIcon}}' wx:if="{{rightIcon}}"></image>
   </view>
   <button wx:if="{{target === '_contact'}}" class='contact' open-type='contact'></button>
-</view>
+</x-view>

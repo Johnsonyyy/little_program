@@ -2,12 +2,16 @@
 <x-swiper withBg='true' images="{{images}}">
 </x-swiper>
 <x-row
+  margin="8px"
+  radius="round"
   label="视图容器组件"
   target="/pages/container-view/index/index">
   <x-icon slot="leftIcon" type='menu'></x-icon>
   <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>
 <x-row
+  margin="8px"
+  radius="round"
   label="基础组件(icon和富文本)"
   target="/pages/base/index/index">
   <x-icon slot="leftIcon" type='note'></x-icon>
@@ -15,12 +19,16 @@
 </x-row>
 <x-row
   label="表单组件（双向绑定）"
+  margin="8px"
+  radius="round"
   target="/pages/form/index/index">
   <x-icon slot="leftIcon" type='order-line'></x-icon>
   <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>
 <x-row
   label="业务组件"
+  margin="8px"
+  radius="round"
   target="/pages/work/index/index">
   <x-icon slot="leftIcon" type='tips'></x-icon>
   <x-icon slot="rightIcon" type='arrow-right'></x-icon>

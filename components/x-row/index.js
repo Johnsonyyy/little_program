@@ -4,6 +4,28 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    height: {
+      type: String,
+      value: '45px',
+      optionalTypes: [Number]
+    },
+    width: {
+      type: String,
+      value: '',
+      optionalTypes: [Number]
+    },
+    shadow:{
+      type: Boolean,
+      value: false
+    },
+    radius: { // 是否圆角
+      type: String,
+      value: "rect"
+    },
+    margin: { // 是否圆角
+      type: String,
+      value: "4px 0px"
+    },
     leftIcon:{
       type:String,
       value: ''
@@ -50,7 +72,7 @@ Component({
      * 2.打开客服页面
      * 3.执行传入的函数
      */
-    _clickItem(){
+    _click(){
       let that = this;
       if(typeof that.data.target === 'string') {
         if (that.data.target === '_contact') {
@@ -66,6 +88,14 @@ Component({
       if(that.data.redPoint){
         that._hiddenSign();
       }
+      that.triggerEvent('click');
+    },
+    /**
+     * 长按事件
+     */
+    _longClick(){
+      let that = this;
+      that.triggerEvent('longClick');
     },
     /**
      * 

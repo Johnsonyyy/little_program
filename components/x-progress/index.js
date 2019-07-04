@@ -57,17 +57,22 @@ Component({
       let that = this;
       setTimeout(() => {
         if(!that.data.upLevel){
-          let width = (newVal / that.data.total) * 100 + "%";
-          let animation = wx.createAnimation({
-            duration: 500,
-            timingFunction: 'ease',
-          })
-          animation.width(width).step()
-          that.setData({
-            animationData: animation.export()
-          })
+          if (newVal <= that.data.total) {
+            let width = ((newVal % that.data.total) / that.data.total) * 100 + "%";
+            let animation = wx.createAnimation({
+              duration: 500,
+              timingFunction: 'ease',
+            })
+            animation.width(width).step()
+            that.setData({
+              animationData: animation.export()
+            })
+          } else{
+            that.data.percent = (newVal % that.data.total);
+            that.setTotal();
+          }
         }
-      },500)
+      },100)
     },
     setTotal(){
       let that = this;

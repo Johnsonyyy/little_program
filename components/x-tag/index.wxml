@@ -1,1 +1,0 @@
-<view class="style-{{line}} color-{{type}}" style="padding:{{padding}};margin:{{margin}};">{{label}}</view>

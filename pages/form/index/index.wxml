@@ -18,7 +18,7 @@
 </x-row>
 <x-row
   label="x-botton(双向绑定)"
-  target="/pages/container-view/scroller/scroller">
+  target="/pages/form/button/button">
   <x-icon slot="leftIcon" type='order-line'></x-icon>
   <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>

@@ -9,6 +9,7 @@
     "pages/container-view/list/list",
     "pages/form/index/index",
     "pages/form/date/date",
+    "pages/form/button/button",
     "pages/form/input/input",
     "pages/form/switch/switch",
     "pages/form/checkbox/checkbox",

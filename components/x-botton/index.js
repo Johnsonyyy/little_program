@@ -5,27 +5,75 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    btnType:{ // 按钮类型，‘primary’，‘circle’
+    tag:{
+      type: Boolean,
+      value: false
+    },
+    radius:{ // 按钮类型，‘primary’，‘circle’
+      type: String,
+      value: 'round'
+    },
+    theme:{ // 'text', 'line'
+      type: String,
+      value: ''
+    },
+    color: { // 'text', 'line'
       type: String,
       value: 'primary'
     },
+    icon: {
+      type: String,
+      value: ''
+    },
     label: {
       type: String,
-      value: '提交'
+      value: ''
     },
     disable:{
       type: Boolean,
       value: false
+    },
+    height: {
+      type: String,
+      value: '50px',
+      optionalTypes: [Number]
+    },
+    width: {
+      type: String,
+      value: '90%',
+      optionalTypes: [Number]
+    },
+    margin: {
+      type: String,
+      value: "4px 0px"
     }
   },
   options: {
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
   },
+  attached() {
+    // 处理传入的数据
+    let that = this;
+    if (Object.prototype.toString.call(that.data.height) == '[object Number]') {
+      that.setData({
+        height: that.data.height + 'px'
+      })
+    }
+    if (Object.prototype.toString.call(that.data.width) == '[object Number]') {
+      that.setData({
+        width: that.data.width + 'px'
+      })
+    }
+    that._initColor();
+  },
   /**
    * 组件的初始数据
    */
   data: {
-    tempObj:{}
+    tempObj:{},
+    color: '',
+    bg: '',
+    border:''
   },
 
   /**
@@ -77,6 +125,58 @@ Component({
             break;
           }
         }
+      }
+    },
+    /**
+     * 初始化颜色
+     */
+    _initColor(){
+      let that = this;
+      let color = that._getColor();
+      switch (that.data.theme) {
+        case 'line':
+          that.data.border = color+' 1px solid';
+          that.data.color = color;
+          that.data.bg = "white";
+          break;
+        case 'text':
+          that.data.border = '1px rgba(0,0,0,0) solid';;
+          that.data.color = color;
+          that.data.bg = 'rgba(0,0,0,0)';
+          break;
+        default:
+          that.data.border = color + ' 1px solid';
+          that.data.color = 'white';
+          that.data.bg = color;
+          break;
+      }
+      that.setData({
+        border: that.data.border,
+        bg: that.data.bg,
+        color: that.data.color
+      })
+    },
+    /**
+     * 获取颜色
+     */
+    _getColor(){
+      let that = this;
+      switch (that.data.color) {
+        case 'dange':
+          return '#F56C6C';
+          break;
+        case 'warning':
+          return '#E6A23C';
+          break;
+        case 'primary':
+          return '#409EFF';
+          break;
+        case 'success':
+          return '#67C23A';
+          break;
+        default:
+          return that.data.color;
+          break;
       }
     }
   }

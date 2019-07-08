@@ -1,0 +1,18 @@
+.color-info{
+  color: #8a8a8a;
+}
+.color-danger{
+  color: #F56C6C;
+}
+.color-warning{
+  color: #E6A23C;
+}
+.color-success{
+  color: #67C23A;
+}
+.color-primary{
+  color: #409EFF;
+}
+.style-line{
+  border:
+}

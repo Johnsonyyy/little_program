@@ -1,10 +1,10 @@
-<x-botton label="保存" radius="ellipse"></x-botton>
-<x-botton margin="auto" icon="tips" label="ceshi">
-</x-botton>
-<x-botton radius="circle" icon="tips">
-</x-botton>
-<x-botton theme="text" radius="ellipse" icon="tips">
-</x-botton>
-<x-botton label="test" tag></x-botton>
-<x-botton theme='line' label="test" tag></x-botton>
-<x-botton theme='text' label="test" tag></x-botton>
+<x-button label="保存" radius="ellipse"></x-button>
+<x-button margin="auto" icon="tips" label="ceshi">
+</x-button>
+<x-button radius="circle" icon="tips">
+</x-button>
+<x-button theme="text" radius="ellipse" icon="tips">
+</x-button>
+<x-button label="test" tag></x-button>
+<x-button theme='line' label="test" tag></x-button>
+<x-button theme='text' label="test" tag></x-button>

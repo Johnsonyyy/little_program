@@ -1,6 +1,6 @@
 <x-row
   label="x-add-img(添加图片)"
+  leftIcon="tips"
+  rightIcon="arrow-right"
   target="/pages/work/add-img/add-img">
-  <x-icon slot="leftIcon" type='tips'></x-icon>
-  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>

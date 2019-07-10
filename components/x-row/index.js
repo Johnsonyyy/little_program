@@ -74,16 +74,12 @@ Component({
      */
     _click(){
       let that = this;
-      if(typeof that.data.target === 'string') {
-        if (that.data.target === '_contact') {
-          return;
-        } else{
-          wx.navigateTo({
-            url: that.data.target,
-          })
-        }
-      }else{
-        that.data.target();
+      if (that.data.target === '_contact') {
+        return;
+      } else {
+        wx.navigateTo({
+          url: that.data.target,
+        })
       }
       if(that.data.redPoint){
         that._hiddenSign();

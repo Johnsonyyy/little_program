@@ -6,7 +6,3 @@
     <view wx:if="{{num > 0}}" class='red_pointer_num'>{{num}}</view>
   </button>
 </form>
-<!-- <view wx:elif="{{type=='circle'}}" class='circle_btn circle' bindtap='_clickCircle'>
-  <slot name="circleIcon"></slot>
-  <view wx:if="{{num > 0}}" class='red_pointer_num'>{{num}}</view>
-</view> -->

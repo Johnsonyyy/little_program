@@ -1,27 +1,27 @@
 <x-row
   label="x-icon(图标)"
+  leftIcon="note"
+  rightIcon="arrow-right"
   target="/pages/base/icon/icon">
-  <x-icon slot="leftIcon" type='note'></x-icon>
-  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>
 <x-row
   label="x-richtext-富文本"
+  leftIcon="note"
+  rightIcon="arrow-right"
   target="/pages/base/richtext/richtext">
-  <x-icon slot="leftIcon" type='note'></x-icon>
-  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>
 <x-row
+  leftIcon="note"
+  rightIcon="arrow-right"
   label="x-progress(进度条,未完成)">
-  <x-icon slot="leftIcon" type='note'></x-icon>
-  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>
 <x-row
+  leftIcon="note"
+  rightIcon="arrow-right"
   label="x-text(文本转换,未完成)">
-  <x-icon slot="leftIcon" type='note'></x-icon>
-  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>
 <x-row
+  leftIcon="note"
+  rightIcon="arrow-right"
   label="x-tags(标签,未完成)">
-  <x-icon slot="leftIcon" type='note'></x-icon>
-  <x-icon slot="rightIcon" type='arrow-right'></x-icon>
 </x-row>

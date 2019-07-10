@@ -2,6 +2,7 @@
   "usingComponents": {
     "x-swiper": "../../components/x-swiper/index",
     "x-icon": "../../components/x-icon/index",
+    "x-button":"../../components/x-button/index",
     "x-row": "../../components/x-row/index"
   }
 }

@@ -15,7 +15,17 @@
 .left-view{
   display: flex;
   align-items: center;
-}.left-view image{
+  width: 400rpx;
+}
+.left-view image{
+  width: 30px;
+  height: 30px;
+}
+.right-view{
+  display: flex;
+  align-items: center;
+}
+.right-view image{
   width: 30px;
   height: 30px;
 }
@@ -42,9 +52,13 @@
   background-color: red;
   padding: 0px 8px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 15px;
   box-shadow: 1rpx 1rpx 2rpx 0rpx #f0f0f0;
+}
+.sign-text{
+  font-size: 14px;
+  color: red;
 }
 .right-img{
   width: 24px;

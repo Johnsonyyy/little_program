@@ -14,7 +14,7 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 const isNumber = (obj) => {
-  if(isNaN(obj)) {
+  if (isNull(obj)) {
     return false;
   }
   if (Object.prototype.toString.call(+obj) === '[object Number]'){

@@ -50,6 +50,11 @@ Component({
       type: String,
       optionalTypes: [Function],
       value: ''
+    },
+    info: {
+      type: String,
+      value: '',
+      optionalTypes: [Number, Boolean],
     }
   },
   options: {
@@ -76,7 +81,7 @@ Component({
       let that = this;
       if (that.data.target === '_contact') {
         return;
-      } else {
+      } else if (that.data.target){
         wx.navigateTo({
           url: that.data.target,
         })
@@ -84,14 +89,14 @@ Component({
       if(that.data.redPoint){
         that._hiddenSign();
       }
-      that.triggerEvent('click');
+      that.triggerEvent('click', that.data.info);
     },
     /**
      * 长按事件
      */
     _longClick(){
       let that = this;
-      that.triggerEvent('longClick');
+      that.triggerEvent('longClick', that.data.info);
     },
     /**
      * 

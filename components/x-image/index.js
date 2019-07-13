@@ -11,12 +11,12 @@ Component({
     },
     width:{
       type: String,
-      value: '2rem',
+      value: '40px',
       optionalTypes: [Number]
     },
     height: {
       type: String,
-      value: '2rem',
+      value: '40px',
       optionalTypes: [Number]
     },
     size: { // 图片默认占屏幕宽度的比例，默认是屏幕的四分之一（除去padding的宽度1/4）
@@ -43,11 +43,16 @@ Component({
     mode:{
       type: String,
       value: 'aspectFill'
+    },
+    defimg:{
+      type: String,
+      value: ''
     }
   },
   attached() {
     // 处理传入的数据
     let that = this;
+    console.log(that.data.height)
     if (utils.isNumber(that.data.height)) {
       that.setData({
         height: that.data.height + 'px'

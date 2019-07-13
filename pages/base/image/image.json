@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-view": "/components/x-view/index",
+    "x-image": "/components/x-image/index"
+  }
+}

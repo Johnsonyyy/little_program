@@ -1,6 +1,7 @@
 <view class='content' style='width:{{size||width}};height:{{size||height}};'>
   <view class='img-view' wx:if="{{!plus}}">
-    <image class='border-{{type}} {{border?"border":""}}' src='{{src}}' bindtap='showImg' mode='{{mode}}'></image>
+    <image wx:if="{{src||defimg}}" class='border-{{type}} {{border?"border":""}}' src='{{src||defimg}}' bindtap='showImg' mode='{{mode}}'></image>
+    <x-icon wx:else size='24' type='add-img'></x-icon>
     <x-icon wx:if="{{clear}}" bind:click="deleteImg" position="close" color='danger' type='clear'></x-icon>
   </view>
   <view bindtap='addImg' wx:if="{{plus}}" class='add-img'>

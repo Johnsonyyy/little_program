@@ -25,3 +25,9 @@
   rightIcon="arrow-right"
   label="x-tags(标签,未完成)">
 </x-row>
+<x-row
+  leftIcon="note"
+  target="/pages/base/image/image"
+  rightIcon="arrow-right"
+  label="x-image">
+</x-row>

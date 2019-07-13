@@ -15,6 +15,7 @@
     "pages/form/checkbox/checkbox",
     "pages/base/index/index",
     "pages/base/icon/icon",
+    "pages/base/image/image",
     "pages/base/richtext/richtext",
     "pages/base/progress/index",
     "pages/work/index/index",

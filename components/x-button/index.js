@@ -46,6 +46,11 @@ Component({
     margin: {
       type: String,
       value: "4px 0px"
+    },
+    info: {
+      type: String,
+      value: '',
+      optionalTypes: [Number, Boolean],
     }
   },
   options: {
@@ -83,12 +88,9 @@ Component({
     _submitEvent(e) {
       let that = this;
       if(that.diffForm()){
-        that.triggerEvent('submit', e.detail.formId);
+        that.data.bindData.formId = e.detail.formId;
+        that.triggerEvent('submit', that.data.info);
       }
-    },
-    _clickCircle(e){
-      let that = this;
-      that.triggerEvent('click', e);
     },
     diffForm(){
       let that = this;

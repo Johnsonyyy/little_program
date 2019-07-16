@@ -5,17 +5,22 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    tag:{
+    tag: {
       type: Boolean,
       value: false
     },
-    radius:{ // 按钮类型，‘primary’，‘circle’
+    radius: { // 按钮类型，‘primary’，‘circle’
       type: String,
       value: 'round'
     },
-    theme:{ // 'text', 'line'
+    theme: { // 'text', 'line'
       type: String,
-      value: ''
+      value: '',
+      observer: function (newVal, oldVal) {
+        // 属性值变化时执行
+        let that = this;
+        that._initColor();
+      }
     },
     color: { // 'text', 'line'
       type: String,
@@ -29,7 +34,7 @@ Component({
       type: String,
       value: ''
     },
-    disable:{
+    disable: {
       type: Boolean,
       value: false
     },
@@ -75,10 +80,10 @@ Component({
    * 组件的初始数据
    */
   data: {
-    tempObj:{},
-    color: '',
+    tempObj: {},
+    textColor: '',
     bg: '',
-    border:''
+    border: ''
   },
 
   /**
@@ -87,42 +92,44 @@ Component({
   methods: {
     _submitEvent(e) {
       let that = this;
-      if(that.diffForm()){
-        that.data.bindData.formId = e.detail.formId;
-        that.triggerEvent('submit', that.data.info);
+      if (that.diffForm()) {
+        that.triggerEvent('submit', {
+          formId: e.detail.formId,
+          data: that.data.info
+        });
       }
     },
-    diffForm(){
+    diffForm() {
       let that = this;
       let pages = getCurrentPages();
       let page = pages[pages.length - 1];
-      if(page.data._require){
-        for(let item in page.data._require){
+      if (page.data._require) {
+        for (let item in page.data._require) {
           let tempItem = item.split('_')[1];
           that.data.tempObj[tempItem] = '';
           that.checkNull(tempItem, page.data);
-          if (!that.data.tempObj[tempItem]){
+          if (!that.data.tempObj[tempItem]) {
             wx.showToast({
-              title: page.data._require[item].name+'必须要填哦',
-              duration:1000,
-              mask:true,
+              title: page.data._require[item].name + '必须要填哦',
+              duration: 1000,
+              mask: true,
               icon: 'none'
             })
             return false;
           }
         }
         return true;
-      }else{
+      } else {
         return true;
       }
     },
-    checkNull(key,data){
+    checkNull(key, data) {
       let that = this;
-      for(let item  in data) {
-        if (Object.prototype.toString.call(data[item]) === '[object Object]'){
+      for (let item in data) {
+        if (Object.prototype.toString.call(data[item]) === '[object Object]') {
           that.checkNull(key, data[item]);
-        }else {
-          if(item === key){
+        } else {
+          if (item === key) {
             that.data.tempObj[key] = data[key].trim();
             break;
           }
@@ -132,36 +139,36 @@ Component({
     /**
      * 初始化颜色
      */
-    _initColor(){
+    _initColor() {
       let that = this;
       let color = that._getColor();
       switch (that.data.theme) {
         case 'line':
-          that.data.border = color+' 1px solid';
-          that.data.color = color;
+          that.data.border = color + ' 1px solid';
+          that.data.textColor = color;
           that.data.bg = "white";
           break;
         case 'text':
           that.data.border = '1px rgba(0,0,0,0) solid';;
-          that.data.color = color;
+          that.data.textColor = color;
           that.data.bg = 'rgba(0,0,0,0)';
           break;
         default:
           that.data.border = color + ' 1px solid';
-          that.data.color = 'white';
+          that.data.textColor = 'white';
           that.data.bg = color;
           break;
       }
       that.setData({
         border: that.data.border,
         bg: that.data.bg,
-        color: that.data.color
+        textColor: that.data.textColor
       })
     },
     /**
      * 获取颜色
      */
-    _getColor(){
+    _getColor() {
       let that = this;
       switch (that.data.color) {
         case 'dange':

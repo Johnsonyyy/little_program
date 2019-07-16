@@ -58,7 +58,12 @@ Component({
       setTimeout(() => {
         if(!that.data.upLevel){
           if (newVal <= that.data.total) {
-            let width = ((newVal % that.data.total) / that.data.total) * 100 + "%";
+            let width = '0%';
+            if (newVal == that.data.total) {
+              width = "100%";
+            } else {
+              width = ((newVal % that.data.total) / that.data.total) * 100 + "%";
+            }
             let animation = wx.createAnimation({
               duration: 500,
               timingFunction: 'ease',

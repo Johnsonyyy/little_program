@@ -52,7 +52,6 @@ Component({
   attached() {
     // 处理传入的数据
     let that = this;
-    console.log(that.data.height)
     if (utils.isNumber(that.data.height)) {
       that.setData({
         height: that.data.height + 'px'
@@ -63,7 +62,6 @@ Component({
         width: that.data.width + 'px'
       })
     }
-    console.log(utils.isNumber(that.data.size));
     if (utils.isNumber(that.data.size)) {
       that.setData({
         size: that.data.size + 'px'
@@ -92,7 +90,6 @@ Component({
     },
     deleteImg(e){
       let that = this;
-      console.log(e);
       that.triggerEvent('deleteImg', that.data.src);
     },
     // 图片预览

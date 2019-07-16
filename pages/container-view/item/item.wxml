@@ -1,6 +1,6 @@
 <x-scroller>
   <block wx:for="{{dataList}}">
-    <x-item wx:key="{{index}}" bind:click="clickItem" bind:longClick="longClickItem" bindData="{{index}}" direction='{{item.display}}'>
+    <x-item wx:key="{{index}}" bind:click="clickItem" bind:longClick="longClickItem" bindData="{{index}}" margin="4px 0px" direction='{{item.display}}'>
       <x-view>
         {{item.title}}{{index}}
       </x-view>

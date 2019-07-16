@@ -12,18 +12,18 @@ Component({
     },
     width: {
       type: String,
-      value: '',
+      value: '100%',
       optionalTypes: [Number]
     },
-    row:{
-      type:String,
+    row: {
+      type: String,
       value: 'left'
     },
     col: { // 垂直方向的
       type: String,
       value: 'center'
     },
-    bg:{ // 默认是无色
+    bg: { // 默认是无色
       type: String,
       value: ''
     },
@@ -39,15 +39,15 @@ Component({
       type: String,
       value: ''
     },
-    font:{ // 字体大小，默认是14，单位是像素
+    font: { // 字体大小，默认是14，单位是像素
       type: String,
       value: "14px"
     },
-    radius:{
-      type:String,
+    radius: {
+      type: String,
       value: 'rect'
     },
-    shadow:{
+    shadow: {
       type: Boolean,
       value: false
     },
@@ -55,7 +55,7 @@ Component({
       type: String,
       value: ''
     },
-    margin:{
+    margin: {
       type: String,
       value: "0px"
     },

@@ -2,7 +2,7 @@
 <x-swiper withBg='true' images="{{images}}">
 </x-swiper>
 <x-row
-  margin="8px"
+  margin="8px 8px 4px"
   radius="round"
   label="视图容器组件"
   leftIcon="menu"
@@ -10,7 +10,7 @@
   target="/pages/container-view/index/index">
 </x-row>
 <x-row
-  margin="8px"
+  margin="4px 8px"
   radius="round"
   label="基础组件(icon和富文本)"
   leftIcon="note"
@@ -19,7 +19,7 @@
 </x-row>
 <x-row
   label="表单组件（双向绑定）"
-  margin="8px"
+  margin="4px 8px"
   radius="round"
   leftIcon="order-line"
   rightIcon="arrow-right"
@@ -27,7 +27,7 @@
 </x-row>
 <x-row
   label="业务组件"
-  margin="8px"
+  margin="4px 8px"
   radius="round"
   leftIcon="tips"
   rightIcon="arrow-right"

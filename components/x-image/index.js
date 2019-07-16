@@ -42,7 +42,7 @@ Component({
     },
     mode:{
       type: String,
-      value: 'aspectFill'
+      value: 'aspectFit'
     },
     defimg:{
       type: String,

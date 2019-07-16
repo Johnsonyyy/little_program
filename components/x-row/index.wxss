@@ -15,7 +15,7 @@
 .left-view{
   display: flex;
   align-items: center;
-  width: 400rpx;
+  width: 50%;
 }
 .left-view image{
   width: 30px;
@@ -24,6 +24,8 @@
 .right-view{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  width: 30%;
 }
 .right-view image{
   width: 30px;

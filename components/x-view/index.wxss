@@ -3,6 +3,7 @@
 }
 .item{
   display: flex;
+  position: relative;
   overflow: hidden;
 }
 .row{

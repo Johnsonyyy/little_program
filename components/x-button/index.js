@@ -1,4 +1,5 @@
 // components/hx-botton/hx-bottom.js
+const utils = require('../../utils/util')
 Component({
   externalClasses: ['circle'],
   /**
@@ -64,12 +65,12 @@ Component({
   attached() {
     // 处理传入的数据
     let that = this;
-    if (Object.prototype.toString.call(that.data.height) == '[object Number]') {
+    if (utils.isNumber(that.data.height)) {
       that.setData({
         height: that.data.height + 'px'
       })
     }
-    if (Object.prototype.toString.call(that.data.width) == '[object Number]') {
+    if (utils.isNumber(that.data.width)) {
       that.setData({
         width: that.data.width + 'px'
       })

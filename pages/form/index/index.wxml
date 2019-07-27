@@ -17,7 +17,7 @@
   target="/pages/container-view/scroller/scroller">
 </x-row>
 <x-row
-  label="x-botton(双向绑定)"
+  label="x-button(双向绑定)"
   leftIcon="order-line"
   rightIcon="arrow-right"
   target="/pages/form/button/button">

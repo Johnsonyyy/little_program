@@ -147,7 +147,7 @@ Component({
         case 'line':
           that.data.border = color + ' 1px solid';
           that.data.textColor = color;
-          that.data.bg = "white";
+          that.data.bg = "rgba(0,0,0,0)";
           break;
         case 'text':
           that.data.border = '1px rgba(0,0,0,0) solid';;

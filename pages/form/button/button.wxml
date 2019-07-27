@@ -7,4 +7,8 @@
 </x-button>
 <x-button label="test" tag></x-button>
 <x-button theme='line' label="test" tag></x-button>
+<x-view>
+<x-button theme='line' label="test" tag></x-button>
+</x-view>
 <x-button theme='text' label="test" tag></x-button>
+<x-view bg="white" col="middle"><x-button label="test" tag></x-button><x-button label="test" tag></x-button></x-view>

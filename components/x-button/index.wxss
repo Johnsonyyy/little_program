@@ -15,7 +15,8 @@ button{
   transform: scale(1.02);
 }
 .botton_tag{
-  display: inline-block;
+  display: inline-flex;
+  display: -webkit-inline-flex
   padding: 0px 0.8rem;
   line-height: 1.2rem;
   font-size: 12px;

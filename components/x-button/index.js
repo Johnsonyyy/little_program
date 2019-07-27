@@ -51,7 +51,7 @@ Component({
     },
     margin: {
       type: String,
-      value: "4px 0px"
+      value: "4px auto"
     },
     info: {
       type: String,

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-modal": "/components/x-modal/index",
+    "x-button": "/components/x-button/index"
+  }
+}

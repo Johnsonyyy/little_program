@@ -1,0 +1,13 @@
+<x-button label="普通提示" bind:submit="showModal1"></x-button>
+<x-modal showModal="{{showModal1}}" content="这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的"></x-modal>
+<x-button label="带有close" bind:submit="showModal2"></x-button>
+<x-modal showModal="{{showModal2}}" close content="这是一条带有关闭按钮的,并且取消了点击背景关闭modal" shadow></x-modal>
+
+<x-button label="打开设置" bind:submit="showModal3"></x-button>
+<x-modal showModal="{{showModal3}}" setting content="由于您未授权使用，所以需要您在设置页面为x-小程序设置权限"></x-modal>
+<x-button label="分享" bind:submit="showModal4"></x-button>
+<x-modal showModal="{{showModal4}}" share content="需要页面中设置分享的功能才能正常调用哦"></x-modal>
+<x-button label="分享和点赞" bind:submit="showModal5"></x-button>
+<x-modal showModal="{{showModal5}}" share like content="需要页面中设置分享的功能才能正常调用哦"></x-modal>
+<x-button label="微信登录" bind:submit="showModal6"></x-button>
+<x-modal showModal="{{showModal6}}" load tips="仅用于小程序登录使用" content="这是一条带有关闭按钮的,并且取消了点击背景关闭modal"></x-modal>

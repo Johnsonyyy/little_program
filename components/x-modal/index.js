@@ -10,7 +10,7 @@ Component({
     },
     title: {
       type: String,
-      value: ""
+      value: "温馨提示"
     },
     label: {
       type: String,
@@ -24,6 +24,10 @@ Component({
       type: Boolean,
       value: false
     },
+    load: {
+      type: Boolean,
+      value: false
+    },
     like: {
       type: String,
       value: ''
@@ -32,7 +36,7 @@ Component({
       type:Boolean,
       value:false
     },
-    index:{
+    bindData:{
       type:Number,
       value: 0
     },
@@ -40,13 +44,21 @@ Component({
       type: Boolean,
       value: false
     },
-    info: {
+    content: {
       type: String,
       value: ''
     },
     color:{
       type:String,
       value:'girl'
+    },
+    shadow: { // 是否允许点击背景关闭，默认是允许
+      type: Boolean,
+      value: true
+    },
+    tips: {
+      type: String,
+      value: ''
     }
   },
   options: {
@@ -75,13 +87,16 @@ Component({
     closeView(){
       let that = this;
       that.setData({
-        hidden: true
+        showModal: false
       })
-      that.triggerEvent("closeSign");
+      that.triggerEvent("closeModal");
     },
-    showView(info){
+    closeModal() {
       let that = this;
-      that.setData(Object.assign(that.data, (info || {}), { hidden: false}))
+      console.log(that.data.shadow);
+      if (that.data.shadow) {
+        that.closeView();
+      }
     },
     likeView(e) {
       let that = this;

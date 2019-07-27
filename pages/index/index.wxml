@@ -15,6 +15,7 @@
   label="基础组件(icon和富文本)"
   leftIcon="note"
   rightIcon="arrow-right"
+  signText="新增+1"
   target="/pages/base/index/index">
 </x-row>
 <x-row

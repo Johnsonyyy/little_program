@@ -1,5 +1,7 @@
 // components/modal_view/modal_view.js
+var hxBehavior = require('../x-behavior');
 Component({
+  behaviors: [hxBehavior],
   /**
    * 组件的属性列表
    */
@@ -50,7 +52,7 @@ Component({
     },
     color:{
       type:String,
-      value:'girl'
+      value:'#409EFF'
     },
     shadow: { // 是否允许点击背景关闭，默认是允许
       type: Boolean,
@@ -62,14 +64,20 @@ Component({
     }
   },
   options: {
-    addGlobalClass: true,
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
+  },
+  attached() {
+    // 处理传入的数据
+    let that = this;
+    that.setData({
+      textColor: that._getColor(that.data.color)
+    })
   },
   /**
    * 组件的初始数据
    */
   data: {
-    hidden:true,
+    textColor:'',
     type:''
   },
 

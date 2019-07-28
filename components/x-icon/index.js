@@ -1,5 +1,7 @@
 // components/hx-icon/index.js
+var hxBehavior = require('../x-behavior');
 Component({
+  behaviors: [hxBehavior],
   externalClasses: ['position'],
   /**
    * 组件的属性列表
@@ -22,12 +24,18 @@ Component({
       value: 'info'
     }
   },
-
+  attached() {
+    // 处理传入的数据
+    let that = this;
+    that.setData({
+      textColor: that._getColor(that.data.color)
+    })
+  },
   /**
    * 组件的初始数据
    */
   data: {
-
+    textColor: ''
   },
 
   /**

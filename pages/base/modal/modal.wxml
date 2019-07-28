@@ -1,7 +1,7 @@
 <x-button label="普通提示" bind:submit="showModal1"></x-button>
 <x-modal showModal="{{showModal1}}" content="这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的\n这是一条普通的"></x-modal>
 <x-button label="带有close" bind:submit="showModal2"></x-button>
-<x-modal showModal="{{showModal2}}" close content="这是一条带有关闭按钮的,并且取消了点击背景关闭modal" shadow></x-modal>
+<x-modal showModal="{{showModal2}}" color="#ef8383" close content="这是一条带有关闭按钮的,并且取消了点击背景关闭modal" shadow></x-modal>
 
 <x-button label="打开设置" bind:submit="showModal3"></x-button>
 <x-modal showModal="{{showModal3}}" setting content="由于您未授权使用，所以需要您在设置页面为x-小程序设置权限"></x-modal>

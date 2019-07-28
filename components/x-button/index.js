@@ -1,7 +1,9 @@
 // components/hx-botton/hx-bottom.js
 const utils = require('../../utils/util')
+var hxBehavior = require('../x-behavior');
 Component({
   externalClasses: ['circle'],
+  behaviors: [hxBehavior],
   /**
    * 组件的属性列表
    */
@@ -165,29 +167,6 @@ Component({
         bg: that.data.bg,
         textColor: that.data.textColor
       })
-    },
-    /**
-     * 获取颜色
-     */
-    _getColor() {
-      let that = this;
-      switch (that.data.color) {
-        case 'dange':
-          return '#F56C6C';
-          break;
-        case 'warning':
-          return '#E6A23C';
-          break;
-        case 'primary':
-          return '#409EFF';
-          break;
-        case 'success':
-          return '#67C23A';
-          break;
-        default:
-          return that.data.color;
-          break;
-      }
     }
   }
 })

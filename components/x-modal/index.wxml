@@ -1,7 +1,7 @@
 <view class='body' hidden='{{!showModal}}'>
   <view class='shadow' bindtap="closeModal"></view>
   <view class='content'>
-    <view class='top text-title'>
+    <view class='top' style='color: {{textColor}}'>
       {{title}}
     </view>
     <scroll-view scroll-y="true" class='middle'>
@@ -20,21 +20,21 @@
       </view>
       <form wx:elif="{{setting}}" report-submit='true' bindsubmit='openSetting' bindreset="formReset">
         <view>
-          <button class='bg-label' open-type="openSetting" bindopensetting="callback" formType="submit">打开设置页面</button>
+          <button style='background-color: {{textColor}};' open-type="openSetting" bindopensetting="callback" formType="submit">打开设置页面</button>
         </view>
       </form>
       <form wx:elif="{{load}}" report-submit='true' bindsubmit='openSetting' bindreset="formReset">
         <view>
-          <button class='bg-label'  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">申请获取微信头像和昵称</button>
+          <button style='background-color: {{textColor}};'  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">申请获取微信头像和昵称</button>
         </view>
       </form>
       <form wx:else report-submit='true' bindsubmit='submitForm' bindreset="formReset">
         <view>
-          <button class='bg-label' formType="submit">{{label}}</button>
+          <button style='background-color: {{textColor}};' formType="submit">{{label}}</button>
         </view>
       </form>
       <view wx:if="{{tips}}" style="margin-top:5px;color:#8a8a8a;">{{tips}}</view>
     </view>
-    <x-icon wx:if="{{close}}" color='primary' bind:click="closeView" size='22' position="close" type="clear-line"></x-icon>
+    <x-icon wx:if="{{close}}" color='{{textColor}}' bind:click="closeView" size='22' position="close" type="clear-line"></x-icon>
   </view>
 </view>

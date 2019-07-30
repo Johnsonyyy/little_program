@@ -61,6 +61,14 @@ Component({
     tips: {
       type: String,
       value: ''
+    },
+    name: { // 仅load==true时可见
+      type: String,
+      value: ''
+    },
+    logo: { // 仅load==true时可见
+      type: String,
+      value: ''
     }
   },
   options: {
@@ -123,6 +131,11 @@ Component({
           console.log(res.authSetting)
         }
       })
+    },
+    bindGetUserInfo(e) {
+      let that = this;
+      // 可以在这里直接处理自己的登录逻辑
+      that.triggerEvent("getUserInfo", e);
     }
   }
 })

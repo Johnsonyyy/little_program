@@ -43,6 +43,27 @@
   width: 100%;
   height: 10%;
 }
+.top_load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+}
+.top_load image{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.middle_load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  font-size: 32rpx;
+}
 .middle{
   display: flex;
   justify-content: center;
@@ -85,6 +106,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  margin: 0px 20px;
+  border: 1px #8a8a8a solid;
 }
 .share-button{
   width: 40px;

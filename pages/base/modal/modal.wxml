@@ -10,4 +10,4 @@
 <x-button label="分享和点赞" bind:submit="showModal5"></x-button>
 <x-modal showModal="{{showModal5}}" share like content="需要页面中设置分享的功能才能正常调用哦"></x-modal>
 <x-button label="微信登录" bind:submit="showModal6"></x-button>
-<x-modal showModal="{{showModal6}}" load tips="仅用于小程序登录使用" content="这是一条带有关闭按钮的,并且取消了点击背景关闭modal"></x-modal>
+<x-modal showModal="{{showModal6}}" logo="/pages/image/auth.jpeg" load tips="仅用于小程序登录使用" name="x-组件库" content="x-,让你的工作更简单"></x-modal>

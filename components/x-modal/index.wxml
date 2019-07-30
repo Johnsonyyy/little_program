@@ -4,17 +4,24 @@
     <view class='top' style='color: {{textColor}}'>
       {{title}}
     </view>
-    <scroll-view scroll-y="true" class='middle'>
+    <scroll-view wx:if="{{!load}}" scroll-y="true" class='middle'>
       <text wx:if="{{content}}" class='info'>{{content}}</text>
       <view class='info'><slot></slot></view>
     </scroll-view>
+    <view wx:if="{{load}}" class='top_load'>
+        <image src='{{logo}}' />
+    </view>
+    <view wx:if="{{load}}" class='middle_load'>
+      <view style='color:{{color}}'>{{name}}</view>
+      <view style='margin-top:20px;color:#8a8a8a;'>{{content}}</view>
+    </view>
     <view class='bottom'>
       <view wx:if="{{share||like}}" class='share'>
         <view wx:if="{{share}}" class='operator-view mr-4 border-gray'>
           <x-icon color='info' size='22' type="share"></x-icon>
           <button data-index='{{bindData}}' class='share-button' open-type="share"></button>
         </view>
-        <view wx:if="{{like}}" bindtap='likeView' data-data='{{bindData}}' class="operator-view ml-30 border-{{likestatus?color:'gray'}}">
+        <view wx:if="{{like}}" bindtap='likeView' data-data='{{bindData}}' class="operator-view border-{{likestatus?color:'gray'}}">
           <x-icon color='{{likestatus?"danger":"info"}}' size='22' type='love-{{likestatus?"":"line"}}'></x-icon>
         </view>
       </view>

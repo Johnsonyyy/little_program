@@ -1,8 +1,6 @@
 <x-view wx:if="{{title}}" row="center">{{title}}</x-view>
-<block wx:for="{{_listData}}">
-  <x-view col='top' wx:key="{{index}}">
-    <view wx:if="{{order}}" style="padding-top: 2px;">{{index+1}}. </view>
-    <view wx:else class="pointer-view"><view class="pointer"></view></view>
-    <view>{{item.content}}</view>
-  </x-view>
-</block>
+<view class='content' style='list-style-type:{{order? "decimal":""}}'>
+  <block wx:for="{{_listData}}">
+    <view class='item'>{{item.content}}</view>
+  </block>
+</view>

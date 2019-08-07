@@ -1,13 +1,10 @@
-.pointer{
-  height: 4px;
-  width: 4px;
-  border-radius: 50%;
-  background-color: black;
+.content{
+  padding: 4px 8px;
 }
-.pointer-view{
-  width: 12px;
-  height: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.item{
+  display: list-item;
+  margin-left: 1rem;
+  list-style-position: outside;
+  font-size: 14px;
+  padding: 0.2rem 0px;
 }

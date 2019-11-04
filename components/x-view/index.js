@@ -16,6 +16,10 @@ Component({
       value: '100%',
       optionalTypes: [Number]
     },
+    weight: {
+      type: Number,
+      value: 1
+    },
     row: {
       type: String,
       value: 'left'

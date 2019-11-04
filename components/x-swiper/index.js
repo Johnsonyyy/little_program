@@ -17,10 +17,6 @@ Component({
       type: Boolean,
       value: false
     },
-    autoplay: { // 是否自动播放
-      type: Boolean,
-      value: false
-    },
     interval: { // 间隔，毫秒，autoplay
       type: Number,
       value: 5000
@@ -34,7 +30,7 @@ Component({
     let that = this;
     if(that.data.withBg){
       that.setData({
-        swiperBg: that.data.images[0].image
+        swiperBg: that.data.images[0].image || that.data.images[0]
       })
     }
   },
@@ -59,7 +55,7 @@ Component({
       let index = +e.detail.current;
       if(that.data.withBg){
         that.setData({
-          swiperBg: that.data.images[index].image
+          swiperBg: that.data.images[index].image || that.data.images[0]
         })
       }
       that.triggerEvent('swiperChange',index);

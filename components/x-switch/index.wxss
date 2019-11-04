@@ -1,0 +1,15 @@
+/* components/x-switch/index.wxss */
+.wx-switch-input{
+    width:82rpx !important;
+    height:20px !important;
+}
+/*白色样式（false的样式）*/
+.wx-switch-input::before{
+    width:80rpx !important;
+    height: 20px !important;
+}
+/*绿色样式（true的样式）*/
+.wx-switch-input::after{
+    width: 40rpx !important;
+    height: 20px !important;
+}

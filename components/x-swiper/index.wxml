@@ -5,7 +5,7 @@
   <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="1200" current="{{swiperCurrent}}" bindchange="_swiperChange" circular="true" style='width:750rpx;height:330rpx;'>
     <block wx:for="{{images}}" wx:key="unique">
       <swiper-item bindtap='_bindItem' data-index='{{index}}'>
-        <image src="{{item.image}}" class='swiper-img' mode='widthFix' style='width:690rpx;height:290rpx;'></image>
+        <image src="{{item.image || item}}" class='swiper-img'  style='width:690rpx;height:290rpx;'></image>
       </swiper-item>
     </block>
   </swiper>

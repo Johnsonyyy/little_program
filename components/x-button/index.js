@@ -27,7 +27,12 @@ Component({
     },
     color: { // 'text', 'line'
       type: String,
-      value: 'primary'
+      value: 'primary',
+      observer: function (newVal, oldVal) {
+        // 属性值变化时执行
+        let that = this;
+        that._initColor();
+      }
     },
     icon: {
       type: String,

@@ -10,7 +10,7 @@ Component({
     },
     color:{
       type: String,
-      value: "#ef8383"
+      value: "#629bea"
     },
     percent:{
       type: Number,

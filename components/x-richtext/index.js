@@ -36,9 +36,7 @@ Component({
     isEdit:true,
     addImgView:{},
     insertIndex:0,
-    width:375,
-    winHeight: 500,
-    textareaHeight: 175
+    width:375
   },
   created(){
     let that = this;
@@ -50,15 +48,6 @@ Component({
       width: app.globalData.systemInfo.windowWidth
     })
     that._initRichText();
-    // 获取设备高度，计算输入框的高度
-    wx.getSystemInfo({
-      success: function (res) {
-        that.setData({
-          winHeight: res.windowHeight,
-          textareaHeight: res.windowHeight - 325
-        })
-      },
-    })
   },
   /**
    * 组件的方法列表
@@ -229,22 +218,6 @@ Component({
         }
       })
       that.triggerEvent('getDataList', list);
-    },
-    /**
-     * bindFocus
-     * 输入框获取到焦点弹出键盘饿的事件
-     */
-    bindFocus(e) {
-      let that = this;
-      let height = +e.detail.height ? +e.detail.height : 325;
-      console.log(that.data.winHeight,height);
-      let textareaHeight = that.data.winHeight - height;
-      console.log(that.data.textareaHeight, textareaHeight);
-      if (textareaHeight !== that.data.textareaHeight) {
-        that.setData({
-          textareaHeight: textareaHeight
-        })
-      }
     }
   }
 })

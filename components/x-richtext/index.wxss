@@ -1,25 +1,14 @@
-:host{
-  height: 100%;
-  overflow-y: scroll;
-}
 .input_view{
   padding: 10px;
   width: 100%;
-  line-height: 1.2;
-  background-color: red;
+  line-height: 32rpx;
   font-size: 32rpx;
-}
-.foucus_pos{
-  position: fixed;
-  top: 0px;
-  left: 0px;
 }
 .input_view2{
   padding: 10px;
   width: 100%;
   font-size: 32rpx;
-  line-height: 1.2;
-  background-color: green;
+  line-height: 19px;
   white-space: pre-wrap;
   word-break: break-all;
 }
